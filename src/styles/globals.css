@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rdt_TableCol{
+    @apply text-gray-600 font-bold  text-base border-b-gray-900 border-b-2  uppercase 
+ }
+ .rdt_TableCell{
+     @apply   text-base text-slate-700
+ }
+ 
+
+
+
+ 
