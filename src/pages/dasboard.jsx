@@ -10,7 +10,7 @@ import { Slide, toast, ToastContainer, Zoom } from 'react-toastify'
 import {Caveat} from '@next/font/google'
 
 const caveat = Caveat({subsets:"latin", weight:"600"})
-const dasboard = () => {
+const Dasboard = () => {
   //!get
   const baseUrl = "https://backend-c4-g3-a4bx.vercel.app/api/books/"
   const get = async () => {
@@ -210,4 +210,4 @@ const dasboard = () => {
   )
 }
 
-export default dasboard
+export default Dasboard
