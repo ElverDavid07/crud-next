@@ -1,6 +1,7 @@
 import { Button, Spacer } from "@nextui-org/react";
 import { Josefin_Sans } from "@next/font/google";
 import { useRouter } from "next/router";
+import Img from 'next/legacy/image'
 
 const josefin = Josefin_Sans({ subsets: ["latin"], weight: "500" });
 const Hero = () => {
@@ -14,10 +15,12 @@ const Hero = () => {
         >
           Sistema de Crud para gestionar libros
         </h3>
-        <img
-          src="hero.svg"
+        <Img
+          src="/hero.svg"
           alt="hero icon"
           width={600}
+          height={670}
+        
           className="lg:pr-5 mx-auto mt-8"
         />
       </div>
