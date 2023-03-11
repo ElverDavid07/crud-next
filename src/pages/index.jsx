@@ -1,7 +1,7 @@
-import Landing from 'components/Landing'
+import Dasboard from './dasboard'
 const Home = () => {
   return (
-    <Landing/>
+    <Dasboard/>
   )
 }
 

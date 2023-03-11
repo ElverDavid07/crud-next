@@ -4,7 +4,7 @@ import { Loading, Button, Tooltip, Container, Modal, Input, Text, Spacer } from 
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import Swal from 'sweetalert2'
-import { paginationOpciones } from 'funciones/dataTable'
+import { paginationOpciones } from 'functions/dataTable'
 import Datatable, { createTheme } from 'react-data-table-component'
 import { Slide, toast, ToastContainer, Zoom } from 'react-toastify'
 import {Caveat} from '@next/font/google'
@@ -13,12 +13,14 @@ const caveat = Caveat({subsets:"latin", weight:"600"})
 const Dasboard = () => {
   //!get
   const baseUrl = "https://backend-c4-g3-a4bx.vercel.app/api/books/"
+  /* https://backend-c4-g3-a4bx.vercel.app/api/books/ */
   const get = async () => {
     try {
       const response = await axios.get(baseUrl)
       const datos = await response.data
       setdata(datos)
       setLoader(false)
+      console.log(datos)
     } catch (error) {
       console.log(error)
     }
